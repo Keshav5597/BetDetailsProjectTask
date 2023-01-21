@@ -1,0 +1,11 @@
+com\casino\betting\config\KafkaProducerConfig.class
+com\casino\betting\kafkaservice\BettingDetailsService.class
+com\casino\betting\config\KafkaTopicConfig.class
+com\casino\betting\kafkaservice\KafkaMessageConsumer.class
+com\casino\betting\config\KafkaConsumerConfig.class
+com\casino\betting\dto\BettingDetailsDto.class
+com\casino\betting\kafkaservice\MessageProducer.class
+com\casino\betting\repository\BettingDetailsRepo.class
+com\casino\betting\controller\BettingDetailsController.class
+com\casino\betting\entity\BettingDetail.class
+com\casino\betting\BettingDetailsApiApplication.class

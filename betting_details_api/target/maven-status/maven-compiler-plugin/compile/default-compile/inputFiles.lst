@@ -1,0 +1,11 @@
+C:\Users\user\git\BetDetailProjectTask\betting_details_api\src\main\java\com\casino\betting\BettingDetailsApiApplication.java
+C:\Users\user\git\BetDetailProjectTask\betting_details_api\src\main\java\com\casino\betting\dto\BettingDetailsDto.java
+C:\Users\user\git\BetDetailProjectTask\betting_details_api\src\main\java\com\casino\betting\kafkaservice\BettingDetailsService.java
+C:\Users\user\git\BetDetailProjectTask\betting_details_api\src\main\java\com\casino\betting\kafkaservice\MessageProducer.java
+C:\Users\user\git\BetDetailProjectTask\betting_details_api\src\main\java\com\casino\betting\config\KafkaProducerConfig.java
+C:\Users\user\git\BetDetailProjectTask\betting_details_api\src\main\java\com\casino\betting\controller\BettingDetailsController.java
+C:\Users\user\git\BetDetailProjectTask\betting_details_api\src\main\java\com\casino\betting\config\KafkaConsumerConfig.java
+C:\Users\user\git\BetDetailProjectTask\betting_details_api\src\main\java\com\casino\betting\config\KafkaTopicConfig.java
+C:\Users\user\git\BetDetailProjectTask\betting_details_api\src\main\java\com\casino\betting\repository\BettingDetailsRepo.java
+C:\Users\user\git\BetDetailProjectTask\betting_details_api\src\main\java\com\casino\betting\entity\BettingDetail.java
+C:\Users\user\git\BetDetailProjectTask\betting_details_api\src\main\java\com\casino\betting\kafkaservice\KafkaMessageConsumer.java

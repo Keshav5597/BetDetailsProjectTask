@@ -1,0 +1,51 @@
+ version: '3'
+ 
+ services:
+      
+   springboot-app:
+    build:
+       context: .
+       dockerfile: Dockerfile
+    ports:
+     - "8085:8080"
+    environment:
+     - spring.datasource.url=jdbc:mysql://mysql:3306/bettingdetails?createDatabaseIfNotExist=true
+     - spring.datasource.username=root
+     - spring.datasource.password=root
+        
+    depends_on:
+     - mysql
+     - kafka
+     - zookeeper
+        
+        
+   mysql:
+    image: mysql:latest
+    environment:
+     - MYSQL_ROOT_PASSWORD=root
+     - MYSQL_DATABASE=bettingdetails
+    ports:
+     - "3307:3306"
+    volumes:
+     - ./data:/var/lib/mysql
+     
+        
+        
+   kafka:
+     image: confluentinc/cp-kafka:latest
+     environment:
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper.2181
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+     ports:
+      - "9092:9092"
+     depends_on:
+      - zookeeper
+        
+   zookeeper:
+     image: confluentinc/cp-zookeeper:latest
+     ports:
+      - "2181:2181"
+ volumes:
+   mysql-db:   
+ 
+        
